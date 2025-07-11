@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Code Survivor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="title-screen">
+            <h1>Code Survivor</h1>
+            <div id="instructions">
+                <h2>遊び方ガイド</h2>
+                <div class="guide-item">
+                    <p class="control">MOVE (移動)</p>
+                    <p class="description">画面をドラッグしてキャラクターを動かす</p>
+                </div>
+                <div class="guide-item">
+                    <p class="control">DASH (ダッシュ)</p>
+                    <p class="description">画面を素早くタップして、その方向へ緊急回避</p>
+                </div>
+                <div class="guide-item">
+                    <p class="control">SURVIVE (生き残れ)</p>
+                    <p class="description">攻撃は自動。敵を倒してレベルアップし、できるだけ長く生き延びろ！</p>
+                </div>
+            </div>
+            <button id="start-button">ゲームスタート</button>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="game-ui">
+            <div id="stats">
+                <span>LEVEL: <span id="level">1</span></span>
+                <span>TIME: <span id="timer">0.0</span></span>
+                <span>KILLS: <span id="kills">0</span></span>
+            </div>
+            <div id="xp-bar-container">
+                <div id="xp-bar"></div>
+            </div>
+        </div>
+        <div id="level-up-modal" style="display: none;">
+            <h2>LEVEL UP!</h2>
+            <p>Choose your upgrade:</p>
+            <div id="upgrade-options">
+                <!-- Upgrade options will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

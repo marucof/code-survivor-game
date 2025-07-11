@@ -1,0 +1,16 @@
+# macOS specific files
+.DS_Store
+._*
+
+# Google Drive specific files (if any are created locally)
+*.gdoc
+*.gsheet
+*.gslides
+*.gdraw
+*.gform
+*.gmap
+
+# Temporary files
+*~
+*.tmp
+*.bak
