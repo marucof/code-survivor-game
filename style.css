@@ -138,3 +138,39 @@ h2 {
     border: none;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    #title-screen {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .control {
+        font-size: 1.1em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    #start-button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    #level-up-modal {
+        padding: 20px;
+    }
+
+    #upgrade-options button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
